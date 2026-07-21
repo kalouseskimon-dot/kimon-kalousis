@@ -42,8 +42,7 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const LINKEDIN_URL =
-  "https://www.linkedin.com/in/kimon-kalousis-b091563a2/";
+const LINKEDIN_URL = "https://linktr.ee/Kimon_Kalousis";
 
 function Index() {
   return (
