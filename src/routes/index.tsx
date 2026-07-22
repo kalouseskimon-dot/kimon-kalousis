@@ -54,7 +54,7 @@ function Index() {
             Kimon Kalousis
           </a>
           <a
-            href={LINKEDIN_URL}
+            href={LINKTREE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90"
@@ -87,7 +87,7 @@ function Index() {
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
-                  href={LINKEDIN_URL}
+                  href={LINKTREE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:shadow-primary/30"
@@ -176,7 +176,7 @@ function Index() {
                 />
               </ul>
               <a
-                href={LINKEDIN_URL}
+                href={LINKTREE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90"
@@ -255,7 +255,7 @@ function Index() {
                 get ongoing guidance and maintenance as you grow.
               </p>
               <a
-                href={LINKEDIN_URL}
+                href={LINKTREE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-primary shadow-lg transition-all hover:bg-white/90"
