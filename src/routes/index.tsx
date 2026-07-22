@@ -278,14 +278,9 @@ function Index() {
             © {new Date().getFullYear()} Kimon Kalousis. Built for lead
             generation.
           </p>
-          <a
-            href={LINKEDIN_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium text-foreground underline-offset-4 hover:underline"
-          >
-            LinkedIn profile
-          </a>
+          <p className="text-sm text-muted-foreground">
+            Find me on LinkedIn as <span className="font-medium text-foreground">Kalousis Kimon</span>.
+          </p>
         </div>
       </footer>
     </main>
