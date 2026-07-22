@@ -41,8 +41,6 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-
-
 function Index() {
   return (
     <main className="min-h-screen bg-background">
