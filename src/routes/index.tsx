@@ -62,6 +62,14 @@ function Index() {
                 <Sparkles className="h-4 w-4" />
                 Workflow Automation Specialist
               </div>
+              <div className="rounded-2xl border border-sky/30 bg-sky-subtle/80 p-5 shadow-sm backdrop-blur-sm">
+                <p className="text-sm font-medium uppercase tracking-wide text-sky">
+                  Find me on LinkedIn
+                </p>
+                <p className="mt-1 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                  Kalousis Kimon
+                </p>
+              </div>
               <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
                 I automate workflows so your team can focus on what matters.
               </h1>
