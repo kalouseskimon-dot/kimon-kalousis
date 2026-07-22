@@ -77,13 +77,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Kimon Kalousis — Workflow Automation" },
-      { name: "description", content: "Workflow automation specialist helping businesses save 4+ hours a week through smart customer support automations." },
+      { title: "Kimon Kalousis — Workflow Automation for Customer Support" },
+      { name: "description", content: "I build automated workflows that save businesses 4+ hours a week. Specialising in customer support automation with Google Sheets logging and Gmail alerts." },
       { name: "author", content: "Kimon Kalousis" },
-      { property: "og:title", content: "Kimon Kalousis — Workflow Automation" },
-      { property: "og:description", content: "Workflow automation specialist helping businesses save 4+ hours a week through smart customer support automations." },
+      { property: "og:title", content: "Kimon Kalousis — Workflow Automation for Customer Support" },
+      { property: "og:description", content: "I build automated workflows that save businesses 4+ hours a week. Specialising in customer support automation with Google Sheets logging and Gmail alerts." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Kimon Kalousis — Workflow Automation for Customer Support" },
+      { name: "twitter:description", content: "I build automated workflows that save businesses 4+ hours a week. Specialising in customer support automation with Google Sheets logging and Gmail alerts." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/96c5e0f4-87b5-4d2a-88e4-bb4917320f8e" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/96c5e0f4-87b5-4d2a-88e4-bb4917320f8e" },
     ],
     links: [
       {
