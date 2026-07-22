@@ -1,0 +1,9 @@
+# Kimon Kalousis — Workflow Automation
+
+> Personal site of Kimon Kalousis, specialising in customer support workflow automation that saves businesses 4+ hours per week.
+
+Kimon builds automations that organise customer feedback in Google Sheets and send Gmail alerts for high-urgency messages. Find him on LinkedIn as "Kalousis Kimon".
+
+## Pages
+
+- [Home](/): Overview of services, the customer support workflow template, and how to get in touch.
