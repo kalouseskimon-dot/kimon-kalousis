@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const LINKEDIN_URL = "https://linktr.ee/Kimon_Kalousis";
+const LINKTREE_URL = "https://linktr.ee/Kimon_Kalousis";
 
 function Index() {
   return (
