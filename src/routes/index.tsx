@@ -260,9 +260,12 @@ function Index() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-primary shadow-lg transition-all hover:bg-white/90"
               >
-                Connect on LinkedIn
+                Get in touch
                 <ArrowRight className="h-5 w-5" />
               </a>
+              <p className="text-sm text-primary-foreground/80">
+                You can also find me on LinkedIn as <span className="font-semibold">Kalousis Kimon</span>.
+              </p>
             </div>
           </div>
         </div>
