@@ -41,7 +41,7 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const LINKTREE_URL = "https://linktr.ee/Kimon_Kalousis";
+
 
 function Index() {
   return (
@@ -51,15 +51,6 @@ function Index() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           <a href="/" className="text-lg font-semibold tracking-tight text-foreground">
             Kimon Kalousis
-          </a>
-          <a
-            href={LINKTREE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90"
-          >
-            Connect
-            <ArrowRight className="h-4 w-4" />
           </a>
         </div>
       </nav>
@@ -85,15 +76,6 @@ function Index() {
                 , cutting out repetitive manual work and response delays.
               </p>
               <div className="flex flex-wrap items-center gap-4">
-                <a
-                  href={LINKTREE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:shadow-primary/30"
-                >
-                  Get Built-For-You Workflows
-                  <ArrowRight className="h-5 w-5" />
-                </a>
                 <a
                   href="#workflow"
                   className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-base font-medium text-card-foreground transition-all hover:bg-accent"
@@ -174,15 +156,6 @@ function Index() {
                   description="High-priority items trigger instant Gmail alerts so your team can act fast."
                 />
               </ul>
-              <a
-                href={LINKTREE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90"
-              >
-                Request this template
-                <ArrowRight className="h-5 w-5" />
-              </a>
             </div>
             <div className="order-1 lg:order-2">
               <div className="glass-card rounded-3xl p-6 shadow-xl sm:p-8">
@@ -253,15 +226,6 @@ function Index() {
                 Let&apos;s build a custom automation for your business — plus
                 get ongoing guidance and maintenance as you grow.
               </p>
-              <a
-                href={LINKTREE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-primary shadow-lg transition-all hover:bg-white/90"
-              >
-                Get in touch
-                <ArrowRight className="h-5 w-5" />
-              </a>
               <p className="text-sm text-primary-foreground/80">
                 You can also find me on LinkedIn as <span className="font-semibold">Kalousis Kimon</span>.
               </p>
