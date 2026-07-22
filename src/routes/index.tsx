@@ -236,8 +236,7 @@ function Index() {
       <footer className="border-t border-border px-4 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Kimon Kalousis. Built for lead
-            generation.
+            © {new Date().getFullYear()} Kimon Kalousis.
           </p>
           <p className="text-sm text-muted-foreground">
             Find me on LinkedIn as <span className="font-medium text-foreground">Kalousis Kimon</span>.
