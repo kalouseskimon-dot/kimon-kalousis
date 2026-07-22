@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const LINKEDIN_URL = "https://linktr.ee/Kimon_Kalousis";
+const LINKTREE_URL = "https://linktr.ee/Kimon_Kalousis";
 
 function Index() {
   return (
@@ -54,12 +54,12 @@ function Index() {
             Kimon Kalousis
           </a>
           <a
-            href={LINKEDIN_URL}
+            href={LINKTREE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90"
           >
-            Connect on LinkedIn
+            Connect
             <ArrowRight className="h-4 w-4" />
           </a>
         </div>
@@ -87,7 +87,7 @@ function Index() {
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
-                  href={LINKEDIN_URL}
+                  href={LINKTREE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:shadow-primary/30"
@@ -176,7 +176,7 @@ function Index() {
                 />
               </ul>
               <a
-                href={LINKEDIN_URL}
+                href={LINKTREE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90"
@@ -255,14 +255,17 @@ function Index() {
                 get ongoing guidance and maintenance as you grow.
               </p>
               <a
-                href={LINKEDIN_URL}
+                href={LINKTREE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-primary shadow-lg transition-all hover:bg-white/90"
               >
-                Connect on LinkedIn
+                Get in touch
                 <ArrowRight className="h-5 w-5" />
               </a>
+              <p className="text-sm text-primary-foreground/80">
+                You can also find me on LinkedIn as <span className="font-semibold">Kalousis Kimon</span>.
+              </p>
             </div>
           </div>
         </div>
@@ -275,14 +278,9 @@ function Index() {
             © {new Date().getFullYear()} Kimon Kalousis. Built for lead
             generation.
           </p>
-          <a
-            href={LINKEDIN_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium text-foreground underline-offset-4 hover:underline"
-          >
-            LinkedIn profile
-          </a>
+          <p className="text-sm text-muted-foreground">
+            Find me on LinkedIn as <span className="font-medium text-foreground">Kalousis Kimon</span>.
+          </p>
         </div>
       </footer>
     </main>
