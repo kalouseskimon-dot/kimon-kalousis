@@ -1,29 +1,111 @@
-# Welcome to your Lovable project
+# Kimon Kalousis — personal site
 
-This project was built with [Lovable](https://lovable.dev).
+Personal website of **Kimon Kalousis**, a 16 year old learning computer science and business and shipping projects as he goes.
 
-## Build with Lovable
+The site is a single-page, static-feeling personal profile: who Kimon is, what he is currently learning, and how to find him. It is built with TanStack Start and deployed as a full-stack React app with server-rendered SEO output.
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+- **Live site:** https://kimon-kalousis.lovable.app
+- **Find me:** LinkedIn and X as **Kalousis Kimon**
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+## What the site contains
 
-## Development
+| Section | Purpose |
+| --- | --- |
+| Sticky nav | Name/wordmark, links back to the top of the page |
+| Hero | "I'm 16 — learning, building, and shipping as I go." plus a highlighted callout reading "Find me on LinkedIn and X — Kalousis Kimon" and a card stating he is 16 and learning computer science and business |
+| What I'm up to | Three cards: learning computer science, learning business, shipping projects |
+| Just getting started | Short personal note, with the LinkedIn/X handle repeated |
+| Footer | Copyright and "Find me on LinkedIn and X as Kalousis Kimon" |
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+There are no forms, no sign-in, no database, and no outbound call-to-action buttons — the page is purely informational.
+
+## Tech stack
+
+- **[TanStack Start](https://tanstack.com/start) v1** (`@tanstack/react-start` 1.168) — file-based routing, SSR, and the `head()` API used for metadata
+- **React 19** + **TypeScript 5.8**
+- **Tailwind CSS v4** (`tailwindcss` 4.2, configured through `src/styles.css` with native `@theme` tokens — no `tailwind.config.js`)
+- **shadcn/ui** primitives on Radix UI (`src/components/ui`, configured in `components.json`)
+- **lucide-react** icons
+- **TanStack Query** and **TanStack Router**
+- **Vite 8** for dev/build, **nitro** for the server build (Cloudflare target by default)
+- **ESLint 9** + **Prettier 3**
+
+## Project structure
+
+```text
+.
+├── public/
+│   ├── favicon.ico
+│   ├── llms.txt              # plain-text site summary for AI crawlers
+│   └── robots.txt            # crawl rules + Sitemap directive
+├── src/
+│   ├── assets/
+│   │   └── hero-automation.jpg   # generated hero image
+│   ├── components/ui/        # shadcn/ui primitives
+│   ├── routes/
+│   │   ├── __root.tsx        # root layout, global metadata, 404 + error screens
+│   │   ├── index.tsx         # the whole page + per-route SEO metadata
+│   │   └── sitemap[.]xml.ts  # serves /sitemap.xml
+│   ├── router.tsx            # router setup
+│   ├── server.ts             # SSR error wrapper / server entry
+│   ├── start.ts              # client start hooks
+│   └── styles.css            # design system: oklch tokens, light-blue theme
+├── AGENTS.md                 # note for AI assistants about the Lovable sync
+├── vite.config.ts
+└── package.json
+```
+
+## Getting started
+
+You need Node.js (or Bun) — [install Node with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
 git clone <this-repository-url>
 cd <repository-name>
-npm i
-npm run dev
+npm install        # or: bun install
+npm run dev        # or: bun run dev
 ```
 
-## Built with
+Then open the URL the dev server prints (in the Lovable sandbox it is `http://localhost:8080`).
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+### Scripts
+
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Start the Vite dev server with hot reload |
+| `npm run build` | Production build |
+| `npm run build:dev` | Build in development mode |
+| `npm run preview` | Serve the production build locally |
+| `npm run lint` | ESLint over the repo |
+| `npm run format` | Prettier write pass over the repo |
+
+## Design system
+
+The look is a light-blue, modern theme defined entirely in `src/styles.css`:
+
+- All colors are **oklch** values declared in `:root` (and a `.dark` block), mapped to Tailwind utilities through an `@theme inline` block (e.g. `--color-sky` → `bg-sky`, `text-sky`).
+- Custom utilities provide the hero gradient (`gradient-hero`) and glass/blur surfaces.
+- Radii, shadows, and spacing are token-based (`--radius`, `--radius-2xl`, …).
+
+To restyle the site, edit the tokens in `src/styles.css` rather than hardcoding colors in components.
+
+## SEO & discoverability
+
+- **Per-route metadata** in `src/routes/index.tsx`: title, description, `og:title`/`og:description`/`og:type`/`og:url`/`og:image`, `twitter:card`/`twitter:image`, and a canonical link. Global defaults live in `src/routes/__root.tsx`.
+- **`/sitemap.xml`** is generated by `src/routes/sitemap[.]xml.ts`.
+- **`public/robots.txt`** allows all crawlers and points at the sitemap.
+- **`public/llms.txt`** gives AI crawlers a plain-text summary and page index.
+
+If you move the site to a different domain, update `BASE_URL` in `src/routes/sitemap[.]xml.ts` and the `Sitemap:` line in `public/robots.txt`.
+
+## Deployment
+
+The project is connected to [Lovable](https://lovable.dev) and publishes to `https://kimon-kalousis.lovable.app`. Because it is a TanStack Start app, the production build is a server build (nitro, Cloudflare target by default) rather than a plain static bundle — deploy it somewhere that runs the server output, or export it through your platform's TanStack Start adapter.
+
+## Working on this repo
+
+`AGENTS.md` carries a standing note: this repository is synced with Lovable, so avoid rewriting published git history (force pushes, rebases, amends, or squashes of already-pushed commits) — that rewrites history on Lovable's side and can cost project history. Keep the connected branch in a working state.
+
+## License
+
+No license file is included; the site content and code are the personal work of Kimon Kalousis. Ask before reusing the copy or the hero artwork.
