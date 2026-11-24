@@ -1,9 +1,9 @@
-# Kimon Kalousis — Workflow Automation
+# Kimon Kalousis — 16, learning and building
 
-> Personal site of Kimon Kalousis, specialising in customer support workflow automation that saves businesses 4+ hours per week.
+> Personal site of Kimon Kalousis, a 16 year old learning computer science and business and shipping projects as he goes.
 
-Kimon builds automations that organise customer feedback in Google Sheets and send Gmail alerts for high-urgency messages. Find him on LinkedIn as "Kalousis Kimon".
+Kimon learns by building: programming, how software works, and how businesses operate. Find him on LinkedIn and X as "Kalousis Kimon".
 
 ## Pages
 
-- [Home](/): Overview of services, the customer support workflow template, and how to get in touch.
+- [Home](/): Who Kimon is, what he is learning, and the projects he is shipping.
