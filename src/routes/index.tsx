@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Clock,
+  GraduationCap,
   Headphones,
   Mail,
   MessageSquare,
@@ -68,6 +69,18 @@ function Index() {
                 </p>
                 <p className="mt-1 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
                   Kalousis Kimon
+                </p>
+              </div>
+              <div className="flex items-start gap-3 rounded-2xl border border-border/60 bg-card/70 p-4 shadow-sm backdrop-blur-sm">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sky text-primary-foreground">
+                  <GraduationCap className="h-5 w-5" />
+                </div>
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  <span className="font-semibold text-foreground">
+                    16 years old
+                  </span>{" "}
+                  — learning computer science and business, and shipping real
+                  projects as I go.
                 </p>
               </div>
               <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
@@ -247,7 +260,11 @@ function Index() {
             © {new Date().getFullYear()} Kimon Kalousis.
           </p>
           <p className="text-sm text-muted-foreground">
-            Find me on LinkedIn as <span className="font-medium text-foreground">Kalousis Kimon</span>.
+            Find me on LinkedIn and X as{" "}
+            <span className="font-medium text-foreground">
+              Kalousis Kimon
+            </span>
+            .
           </p>
         </div>
       </footer>
